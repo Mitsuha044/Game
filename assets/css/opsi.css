@@ -1,0 +1,85 @@
+body {
+    background: url('../img/book.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f9ff;
+    color: #333;
+}
+
+h1 {
+    color: #000000;
+    font-weight: bold;
+}
+
+.lead {
+    color: #555;
+}
+
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.btn {
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-level {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #6c5ce7;
+}
+
+.icon {
+    width: 80px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.btn-icon {
+    background-color: #4b37db;
+    border: none;
+    color: #ffffff;
+}
+
+.btn-icon:hover {
+    background-color: #6c5ce7;
+    color: #ffffff;
+}
+
+.btn-level {
+    background-color: #4b37db;
+    border: none;
+    color: #ffffff;
+}
+
+.btn-level:hover {
+    background-color: #6c5ce7;
+    color: #ffffff;
+}
+
+.fa-3x {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}

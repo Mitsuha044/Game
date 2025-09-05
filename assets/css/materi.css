@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background: linear-gradient(to bottom right, #fdfdfd, #e8f6ff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.judul {
+  background-color: #d4e7f5;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #90caf9;
+  border-radius: 0 0 25px 25px;
+  text-align: center;
+}
+
+.judul h1 {
+  font-size: 2.5rem;
+  color: #444;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.judul p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.info-pemain {
+  font-size: 1rem;
+  color: #555;
+}
+
+.info-pemain p {
+  margin: 0.2rem;
+}
+
+/* Card gizi */
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.gizi-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.gizi-list li {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Tombol musik: pojok kanan atas */
+.music-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  z-index: 1000;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.music-toggle:hover {
+  background-color: #1e88e5;
+}
+
+/* Footer tombol lanjut */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.btn-soal {
+  background-color: #4b37db;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-soal:hover {
+  background-color: #6c5ce7;
+}
+
+/* Responsif HP */
+@media (max-width: 576px) {
+  .judul h1 {
+    font-size: 2rem;
+  }
+
+  .judul p,
+  .info-pemain {
+    font-size: 0.95rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text,
+  .gizi-list li {
+    font-size: 0.95rem;
+  }
+
+  .music-toggle {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .btn-soal {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

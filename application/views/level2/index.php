@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level 2 - Kuis Gizi Anak</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="<?= base_url('assets/css/level2.css'); ?>">
+</head>
+
+<body data-base-url="<?= base_url(); ?>">
+    <div class="quiz-container shadow-lg bg-white p-4 mt-4 rounded">
+
+        <!-- level 2 -->
+        <div class="quiz-counter" id="quiz-counter">Level 2</div>
+
+        <!-- Intruksi -->
+        <h5 class="text-center text-dark fw-bold mb-3" style="max-height: 200px;">
+            Perhatikan gambar di bawah ini
+        </h5>
+
+        <!-- Gambar -->
+        <img id="question-image" src="" alt="Ilustrasi soal" />
+
+        <!-- soal -->
+        <h4 id="question-text" class="text-center"></h4>
+        <div id="answer-buttons" class="mt-3"></div>
+        <button id="next-btn" class="btn btn-primary w-100 d-none">Berikutnya</button>
+
+        <form action="<?= base_url('level2/selesai'); ?>" method="post" id="form-selesai" class="mt-3 d-none">
+            <input type="hidden" name="nilai" id="nilai">
+            <input type="hidden" name="benar" id="benar">
+            <input type="hidden" name="salah" id="salah">
+        </form>
+    </div>
+
+    <!-- Suara -->
+    <audio id="correctSound" src="<?= base_url('assets/mp3/benar.mp3'); ?>" preload="auto"></audio>
+    <audio id="wrongSound" src="<?= base_url('assets/mp3/salah.mp3'); ?>" preload="auto"></audio>
+    <audio id="clickSound" src="<?= base_url('assets/mp3/click.mp3'); ?>" preload="auto"></audio>
+
+    <!-- JS untuk Level 2 -->
+    <script src="<?= base_url('assets/js/level2.js'); ?>"></script>
+</body>
+
+</html>

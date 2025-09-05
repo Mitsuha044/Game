@@ -1,0 +1,141 @@
+body {
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hasil-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.hasil-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+    font-size: 16px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table th {
+    background-color: #e3f2fd;
+    color: #333;
+}
+
+.nilai {
+    font-weight: bold;
+    font-size: 18px;
+    color: #00796b;
+}
+
+.nilai:empty::after {
+    content: "❌ Belum Dikerjakan";
+    color: red;
+}
+
+.info-box {
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: #fff9c4;
+    border-left: 6px solid #fbc02d;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.spacer-row {
+    height: 15px;
+    background-color: transparent;
+}
+
+.btn-primary,
+.btn-danger {
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.info-card {
+    background-color: #f1f8e9;
+    border-left: 6px solid #8bc34a;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.user-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #aed581;
+    background-color: #fff;
+    padding: 4px;
+}
+
+/* Mobile Responsive untuk HP & iPhone */
+@media (max-width: 576px) {
+    .user-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 14px;
+        padding: 6px 4px;
+    }
+
+    .nilai {
+        font-size: 16px;
+    }
+
+    .info-box {
+        font-size: 14px;
+    }
+}
+
+/* Tablet Responsive */
+@media (min-width: 577px) and (max-width: 992px) {
+    .user-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .table th,
+    .table td {
+        font-size: 15px;
+        padding: 8px 6px;
+    }
+
+    .nilai {
+        font-size: 17px;
+    }
+
+    .info-box {
+        font-size: 15px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 993px) {
+    .btn-lg {
+        width: auto;
+    }
+}

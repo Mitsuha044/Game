@@ -1,0 +1,109 @@
+/* level5.css */
+
+/* Container quiz */
+.quiz-container {
+    max-width: 900px;
+    /* diperlebar dari 700px */
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Gambar soal */
+#question-images .col-6 {
+    padding: 5px;
+}
+
+#question-images img {
+    transition: transform 0.2s;
+    cursor: pointer;
+    width: 100%;
+    max-height: 130px;
+    /* sedikit lebih tinggi */
+    object-fit: contain;
+}
+
+#question-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Nama gambar di bawah */
+#question-images .fw-bold {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Teks pertanyaan */
+#question-text {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+/* Tombol jawaban */
+#answer-buttons button {
+    font-size: 1rem;
+    padding: 12px;
+    transition: all 0.2s;
+}
+
+#answer-buttons button:hover {
+    transform: scale(1.02);
+}
+
+/* Tombol next */
+#next-btn {
+    font-size: 1.1rem;
+    padding: 12px;
+    margin-top: 12px;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 576px) {
+    .quiz-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #question-text {
+        font-size: 1.1rem;
+    }
+
+    #question-images .fw-bold {
+        font-size: 0.9rem;
+    }
+
+    #answer-buttons button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    #next-btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+/* Grid responsif gambar */
+#question-images .col-6 {
+    flex: 0 0 50%;
+    /* default 2 kolom */
+    max-width: 50%;
+}
+
+@media (min-width: 768px) {
+    #question-images .col-6 {
+        flex: 0 0 33.3333%;
+        /* tablet 3 kolom */
+        max-width: 33.3333%;
+    }
+}
+
+@media (min-width: 992px) {
+    #question-images .col-6 {
+        flex: 0 0 25%;
+        /* desktop 4 kolom */
+        max-width: 25%;
+    }
+}
